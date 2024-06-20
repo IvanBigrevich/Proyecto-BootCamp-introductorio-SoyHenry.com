@@ -1,0 +1,160 @@
+main {
+    text-align: center;
+    margin-left: 10px;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 450px;
+    background-color: #202e3d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../../img/webs_recomendadas.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    margin-top: 700px;
+    margin-left: auto;
+    margin-right: -300px;
+    
+}
+
+#tituloPrincipal {
+    position: absolute; 
+    top: 0; 
+    left: 50%;
+    transform: translate( 40%, -50%);
+    width: max-content;
+    font-family: "Trajan Pro", serif;
+    font-size: 72px;
+    background-color: rgb(0, 128, 79);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+    margin-bottom: 20px;
+}
+
+#contenedorPeliculas {
+    margin-top: 200px; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pelicula {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pelicula img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+.tituloPelicula {
+    background-color: purple;
+    color: white;
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 2px solid white;
+    margin: 10px 0;
+}
+
+.informacionPelicula {
+    background-color: purple;
+    color: white;
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 2px solid white;
+    margin: 5px 0;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #96660e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+#enlaces {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#descripcion {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 50px; 
+    margin-bottom: 20px;
+    background-color: #acc03b;
+    border-radius: 10px; 
+    border: 2px solid white;
+    padding: 6px 12px; 
+}
+
+#seccionEnlaces {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: -70px;
+    right: auto;
+    left: auto;
+    margin-bottom: 100px;
+}
+
+.boton-externo {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #dc3545; 
+    color: white;
+    padding: 100px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 72px; 
+}
+
+.boton-externo:hover {
+    background-color: #c82333;
+}

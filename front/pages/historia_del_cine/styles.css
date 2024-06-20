@@ -1,0 +1,163 @@
+main {
+    text-align: center;
+    margin-left: 200px;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 400px;
+    background-color: #29d887;
+    color: rgb(175, 45, 45);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../../img/historia_del_cine.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    margin-top: 700px;
+    margin-left: auto;
+    margin-right: -350px;
+    
+}
+
+#tituloPrincipal {
+    position: absolute; 
+    top: 0; 
+    left: 50%;
+    transform: translate( 110%, -50%);
+    width: max-content;
+    font-family: "Trajan Pro", serif;
+    font-size: 72px;
+    background-color: rgb(23, 0, 128);
+    color: rgb(10, 168, 31);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+    margin-bottom: 20px;
+}
+
+#contenedorPeliculas {
+    margin-top: 200px; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pelicula {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.pelicula img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+.tituloPelicula {
+    background-color: purple;
+    color: white;
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 2px solid white;
+    margin: 10px 0;
+}
+
+.informacionPelicula {
+    background-color: purple;
+    color: white;
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 2px solid white;
+    margin: 5px 0;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #96660e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+#enlaces {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#descripcion {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 50px; 
+    margin-bottom: 20px;
+    font-family: "Trajan Pro", serif;
+    font-size: 24px;
+    color: rgb(162, 50, 228);
+    background-color: #acc03b;
+    border-radius: 10px; 
+    border: 2px solid white;
+    padding: 6px 12px; 
+}
+
+#seccionEnlaces {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 700px;
+    margin-bottom: 50px;
+}
+
+.boton-externo {
+    position: absolute;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 10px;
+    background-color: #dc3545; 
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 36px; 
+}
+
+.boton-externo:hover {
+    background-color: #c82333;
+}
