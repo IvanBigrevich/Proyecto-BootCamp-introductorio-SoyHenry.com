@@ -6,6 +6,7 @@ const validateMovies = (req, res, next) => {
             error: "Falta el dato del nombre",
         });
     } else{
+        console.log("Nombre de la pelicula correcto");
         next();
     }
 };
