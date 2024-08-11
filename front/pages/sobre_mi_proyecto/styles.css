@@ -45,7 +45,7 @@ footer {
     position: absolute; 
     top: 10%; 
     left: 50%;
-    transform: translate( 90%, -50%);
+    transform: translate( 50%, -50%);
     width: max-content;
     font-family: "Trajan Pro", serif;
     font-size: 72px;

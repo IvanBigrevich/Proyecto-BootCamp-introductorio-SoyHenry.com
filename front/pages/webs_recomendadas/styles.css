@@ -43,7 +43,7 @@ footer {
 
 #tituloPrincipal {
     position: absolute; 
-    top: 0; 
+    top: 10%; 
     left: 50%;
     transform: translate( 40%, -50%);
     width: max-content;
