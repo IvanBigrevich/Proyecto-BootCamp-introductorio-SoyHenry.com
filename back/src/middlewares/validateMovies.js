@@ -1,12 +1,14 @@
-const validateMovies = (req, res, next) => {
-    const { name } = req.body;
+const Movie = require("../models/Movie");
 
-    if(!name){
+const validateMovies = (req, res, next) => {
+    const { Movie } = req.body;
+
+    if(!Movie){
         return res.status(400).json({
-            error: "Falta el dato del nombre",
+            error: "Faltan datos de la pelicula",
         });
     } else{
-        console.log("Nombre de la pelicula correcto");
+        console.log("Datos de la pelicula correcto");
         next();
     }
 };

@@ -1,21 +1,23 @@
+const Movie = require("../models/Movie");
 const movieService = require("../services/movieService");
 
 module.exports = {
-    getAllMovies: async (req, res) => {
+    getMovies: async (req, res) => {
         try {
             const movies = await movieService.getMovies();
             res.status(200).json(movies);
         } catch (error) {
             res.status(500).json({
                     error: "Error interno del servidor",
+                    details: error.message,
             });
         };
     },
 
     createMovies: async (req, res) => {
-        const { name } = req.body;
+        const { Movie } = req.body;
         try {
-            await movieService.createMovies(name);
+            await movieService.createMovies(Movie);
             res.status(201).json({
                 message: "Pelicula creada correctamente",
             });

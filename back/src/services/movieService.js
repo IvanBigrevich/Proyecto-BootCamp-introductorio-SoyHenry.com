@@ -1,31 +1,15 @@
-const movies = [
-    {
-        id: 1,
-        name: "Guardians of the Galaxy",
-    },
-    {
-        id: 2,
-        name: "Star Wars - A New Hope",
-    },
-    {
-        id: 3,
-        name: "The Lord of the Rings",
-    },
-];
-
-let id = 4;
+const Movie = require("../models/Movie");
 
 module.exports = {
     getMovies: async () => {
-        return movies;
+        try {
+            const movies = await Movie.find();
+            return movies;
+        } catch (error) {
+            console.error("Error en movieService.getMovies:", error);
+            throw error;
+        }
     },
 
-    createMovies: async (name) => {
-        const newMovie = {
-            id,
-            name,
-        };
-        id++;
-        movies.push(newMovie);
-    },
+    //createMovies: async (name) => {},
 };
