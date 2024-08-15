@@ -6,6 +6,10 @@ const indexRouter = Router();
 
 indexRouter.get("/movies", moviesController.getMovies);
 
-indexRouter.post("/movies", validateMovies,moviesController.createMovies);
+indexRouter.get("/movies/ByName", moviesController.getMovieByName);
+
+indexRouter.get("/movies/:id", moviesController.getMovieById);
+
+indexRouter.post("/movies", validateMovies, moviesController.createMovie);
 
 module.exports = indexRouter;

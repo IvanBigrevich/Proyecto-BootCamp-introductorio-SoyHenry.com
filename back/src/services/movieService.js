@@ -11,5 +11,18 @@ module.exports = {
         }
     },
 
-    //createMovies: async (name) => {},
+    getMovieById: async (id) => {
+        const movie = await Movie.findById(id);
+        return movie;
+    },
+
+    getMovieByName: async (title) => {
+        const movie = await Movie.findOne({name: title});
+        return movie;
+    },
+
+    createMovie: async (movie) => {
+        const newMovie = await Movie.create(movie);
+        return newMovie;
+    },
 };
